@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sticy Position</title>
+    <style>
+        div.sticy {
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Try to <b>scroll</b> inside this frame to understand how sticy positioning works.
+    </p>
+    <p>
+        Note: IE/Edge 15 and earlier cersions do not support sticy position.
+    </p>
+
+    <div class="sticy">
+        I am sticy!
+    </div>
+
+    <div style="padding-bottom: 2000px;">
+        <p>
+          In this example, the sticky element sticks to the top of the page (top:0), when you search its scroll position.
+        </p>
+
+        <p>
+            Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis asperiores culpa ea omnis. Nihil delectus consequatur corporis officia fugit temporibus odit. Voluptatem ullam quaerat molestiae earum vitae? Exercitationem, inventore.
+        </p>
+
+        <p>
+            Some text to enable scrolling... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi aspernatur dignissimos eius? Voluptates, recusandae autem. Cupiditate, quis modi illum quidem voluptas amet recusandae sapiente exercitationem molestiae nisi minima aspernatur!
+        </p>
+
+    </div>  
+</body>
+</html>
