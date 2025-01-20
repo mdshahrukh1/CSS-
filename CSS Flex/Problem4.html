@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Flow</title>
+    <style>
+        body {
+            background-color: #E7E9EB;
+        }
+        #myDIV {
+            height: 300px;
+            background-color: #FFF;
+        }
+        #mymain {
+            height: 100px;
+            display: flex;
+            flex-flow: column-reverse wrap-reverse;
+            margin-right: 200px;
+        }
+        #mymain div {
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>The flex-flow property</h1>
+
+    <div id="myDIV">
+        <div id="mymain">
+            <div style="background-color: coral;">red div</div>
+            <div style="background-color: lightblue;">blue div</div>
+            <div style="background-color: khaki;">yellow div</div>
+            <div style="background-color: pink;">pink div</div>
+        </div>
+    </div>
+</body>
+</html>
