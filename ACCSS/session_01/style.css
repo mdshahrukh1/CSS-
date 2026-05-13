@@ -1,0 +1,19 @@
+h1, h2 {
+    color: greenyellow;
+    background-color: gray;
+}
+
+p {
+    color: red;
+    background-color: burlywood;
+}
+
+button {
+    color: gold;
+    background: black;
+}
+
+h3 {
+    color: rgb(0, 255, 0);
+    /* background-color: cyan; */
+}

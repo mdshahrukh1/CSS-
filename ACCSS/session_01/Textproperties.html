@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apna.css">
+    <title>Text and Font in CSS</title>
+</head>
+
+<body>
+    <!-- Text Properties in CSS are used to control the appearance of text on a webpage.
+    Some common text properties include:
+    - font-family: Sets the font family for an element.
+    - font-size: Sets the size of the font.
+    - font-weight: Sets the weight of the font (normal, bold, etc.).
+    - color: Sets the color of the text.
+    - text-align: Sets the horizontal alignment of the text (left, right, center, justify).
+    - text-decoration: Sets the decoration of the text (underline, overline, line-through).
+    - text-transform: Controls the capitalization of text (uppercase, lowercase, capitalize).
+    - letter-spacing: Sets the spacing between characters.
+    - font-weight can also be set to numeric values (100, 200, 300, etc.) to specify the weight of the font more precisely.
+    - line-height: Sets the height of a line of text, which can affect the spacing between lines.
+    - letter-spacing: Sets the spacing between characters in a text.
+    - font-style: Sets the style of the font (normal, italic, oblique).
+    - font-variant: Controls the use of small-caps font.
+    - font-size can be set using various units such as pixels (px), em, rem, percentages (%), etc. -->
+
+    <!--
+    text-align: left; /* Aligns text to the left */
+    text-align: start; /* Aligns text to the start of the container */
+    text-align: right; /* Aligns text to the right */
+    text-align: end; /* Aligns text to the end of the container */
+    text-align: center; /* Aligns text to the center */
+    text-align: justify; /* Justifies text */ -->
+
+    <!-- its related to parent element and the direction of the text.
+    For example, in a left-to-right (LTR) context,
+    "start" would align text to the left, while in a right-to-left (RTL) context,
+    "start" would align text to the right. Similarly,
+    "end" would align text to the right in LTR and to the left in RTL contexts.
+    This allows for more flexible and context-aware text alignment in web design. -->
+
+
+    <!-- font-weight: normal; /* Sets the font weight to normal */
+    font-weight: bold; /* Sets the font weight to bold */
+    font-weight: 100; /* Sets the font weight to 100 (light) */
+    font-weight: 200; /* Sets the font weight to 200 */
+    font-weight: 300; /* Sets the font weight to 300 (light) */
+    font-weight: 400; /* Sets the font weight to 400 (normal) */
+    font-weight: 500; /* Sets the font weight to 500 (medium) */
+    font-weight: 600; /* Sets the font weight to 600 (semi-bold) */
+    font-weight: 700; /* Sets the font weight to 700 (bold) */
+    font-weight: 800; /* Sets the font weight to 800 (extra-bold) */
+    font-weight: 900; /* Sets the font weight to 900 (black) */
+    font-weight: inherit; /* Inherits the font weight from the parent element */
+    font-weight: initial; /* Sets the font weight to the default value (normal) */
+    font-weight: unset; /* Resets the font weight to its inherited value if it inherits, or to the initial value if it does not inherit */
+    font-weight: bolder; /* Sets the font weight to a value that is one level bolder than the parent element */
+    font-weight: lighter; /* Inherits the font weight from the parent element */ -->
+
+
+
+    <!-- Text decoration
+    Sets the appearance of decorative lines on text like underlines, overlines, and line-throughs. -->
+
+    <!-- text-decoration: none; /* No decoration */
+    text-decoration: underline; /* Underline the text */
+    text-decoration: overline; /* Overline the text */
+    text-decoration: line-through; /* Strikethrough the text */
+    text-decoration: underline overline; /* Underline and overline the text */
+    text-decoration: wavy underline; /* Underline the text with a wavy line */
+    text-decoration: dotted underline; /* Underline the text with a dotted line */
+    text-decoration: dashed underline; /* Underline the text with a dashed line */ 
+    text-decoration: double underline; /* Underline the text with a double line */
+    text-decoration: wavy red underline; /* Underline the text with a wavy red line */
+    text-decoration: underline wavy red; /* Underline the text with a wavy red line */
+    text-decoration: underline overline; /* Underline and overline the text */
+    text-decoration: underline line-through; /* Underline and strikethrough the text */
+    text-decoration: overline line-through; /* Overline and strikethrough the text */
+    text-decoration: underline overline line-through; /* Underline, overline, and strikethrough the text -->
+    <!-- text-decoration: red underline; /* Underline the text with a red line */ -->
+
+
+    <!-- Line height is the vertical distance between lines of text. 
+    It can be set using various units such as pixels (px), em, rem, percentages (%), etc. -->
+
+    <!-- line-height: normal; /* Sets the line height to a normal value based on the font size */
+    line-height: 1.5; /* Sets the line height to 1.5 times the font size */
+    line-height: 20px; /* Sets the line height to 20 pixels */
+    line-height: 150%; /* Sets the line height to 150% of the font size */ -->
+
+
+    <!-- Letter spacing, also known as tracking, is the space between characters in a text.
+    It can be set using various units such as pixels (px), em, rem, percentages (%), etc. -->
+    <!-- It controls the horizontal spacing  behaviour between characters in a text. Positive values increase the spacing, while negative values decrease it. -->
+
+    <!-- letter-spacing: normal; /* Sets the letter spacing to normal */
+    letter-spacing: 2px; /* Sets the letter spacing to 2 pixels */
+    letter-spacing: 0.1em; /* Sets the letter spacing to 0.1em */
+    letter-spacing: 5%; /* Sets the letter spacing to 5% of the font size */ -->
+
+    <!-- Font-size units in CSS
+    Font-size can be set using various units in CSS, including:
+    Absolute units: px (pixels), pt (points), pc(), cm (centimeters), mm (millimeters), in (inches)
+    Relative units: em (relative to the font size of the element),
+    rem (relative to the font size of the root element),
+    % (percentage relative to the parent element's font size),
+    vw (viewport width), vh (viewport height),
+    vmin (the smaller of viewport width and height),
+    vmax (the larger of viewport width and height)
+
+    96px = 1in (1 inch is equal to 96 pixels)
+    most commonly used units for font-size are px, em, rem, and %.
+    Absolute units like px provide a fixed size,
+    while relative units like em and rem allow for more flexible and scalable designs.
+    The choice of unit depends on the specific design requirements and the desired responsiveness of the text on
+    different devices.
+
+    Not suitable fo responsive design as it does not scale with the user's settings or the size of the viewport. -->
+
+    <!-- font Family: Arial, Helvetica, sans-serif; /* Sets the font family to Arial, with fallbacks to Helvetica and any sans-serif font */ -->
+    <!-- It specifies a prioritized list of font family names and/or generic family names for the selected element. 
+    The browser will use the first available font in the list. 
+    If the specified font is not available, it will fall back to the next font in the list,
+    and so on, until it finds a font that is available on the user's system.
+    If none of the specified fonts are available, it will use a default font.
+    This allows for better control over the appearance of text across different devices and platforms. -->
+
+
+    <!-- Practice Questions: -->
+
+    <h1>Apna <br> College</h1>
+</body>
+
+</html>
