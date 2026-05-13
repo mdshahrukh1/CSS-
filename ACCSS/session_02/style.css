@@ -1,0 +1,230 @@
+/* Selectors in CSS
+ h1 {
+    color: red;
+ }
+here h1 is a selector
+
+Universal Selector(*) - To select everything in a document
+
+Element Selector(h1, amy lement) - Selects all elements of the same type
+
+ID Selector - Selects an element based on the value of the elements's id attribute
+#myID {
+ properyty: value;
+}
+
+Class Selector - Selects an element based on their class attribute
+.myclass {
+  property: value;
+}
+
+
+Descendant Selectors - Selects all paragraphs inside divs
+div p {
+  property: value;
+}
+
+
+ Adjacent Sibling Combinator - Heading3 that comes immediately after any paragraph
+p + h3 {
+  property: value;
+} 
+
+
+Child Combinator - Selects all buttons which are direct children of spans
+span > button {
+  property: value;
+}
+
+
+Attribute Selectors - Selects elements based on the presence or value of a given attribute
+input[attr = "value"] {
+  property: value;
+}
+
+
+Pseudo Class - A keyword added to a selector that specifies a special state of the slected element(s)
+:hover, :active, :checked, nth-of-type
+
+Pseudo Elements - Akeyword added to a selector that lets you style a specific part of the selected element(s)
+::first-letter, ::first-line, ::selection  etc...
+
+
+CSS: Cascading StyleSheets
+What is cascade in css?
+The CSS cascade algorithm's jb is to select CSS declaration in order to determine the correct values for CSS properties.
+
+
+
+Selector Specificity
+What is specificity?
+Specificity is na algorithm that calculates the weight htat is applied to agiven CSS declaration.
+
+id > class, attribute & pseudo-class > element & pseudo-element
+
+use more selectors
+
+if specificity same then we see casading.
+
+
+Inline Specificity - Inline styles are more specific than id.
+
+
+!important - To show the most specific thing in document
+
+h2 {
+  background-color: blue !important;
+}
+
+
+ */
+
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,
+h3 {
+    color: #b92b27;
+}
+
+h3 {
+    background-color: antiquewhite !important;
+}
+
+#login {
+    background-color: white;
+    color: black;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+
+/* descendant selector  */
+
+/* p a {
+    color: purple;
+    background-color: yellow;
+ } */
+
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li {
+    color: red;
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+/* nav a {
+    color: hotpink;
+} we can write like this also */
+
+
+
+/* Adjacent sibling combinators */
+p+h3 {
+    text-decoration: underline;
+}
+
+.upvote+button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+
+/* Child Combinator here we can't go farther after on level */
+div>input {
+    background-color: darksalmon;
+}
+
+
+
+/* Attribute Selectors */
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+
+/* #myId p{
+    color: green;
+} */
+
+div[id="myId"] P {
+    color: green;
+}
+
+
+
+
+/* Pseudo Class */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+button:active {
+    background-color: pink;
+    color: black;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+/* .post:nth-of-type(2) {
+    background-color: blanchedalmond;
+} */
+
+/* we can use 3n, 2n, 1n, n, 2n + 1 etec... */
+div:nth-of-type(2n) {
+    background-color: blanchedalmond;
+}
+
+
+
+/* Pseudo Elements */
+
+h1::first-letter {
+    color: black;
+}
+
+p::first-line {
+    color: black;
+}
+
+p::selection {
+    background-color: limegreen;
+}
