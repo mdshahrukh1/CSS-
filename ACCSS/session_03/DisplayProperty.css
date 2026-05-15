@@ -1,0 +1,81 @@
+/* h2 {
+    display: inline;
+    background-color: aqua;
+}
+
+span {
+    display: block; 
+    background-color: yellowgreen;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+    It will effect only left & right of inline element
+    but not effect height & width 
+}
+
+div {
+    background-color: yellowgreen;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+} */
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    /* It will apply the style as bloack element & it will behave like inline element  */
+}
+
+#third {
+    display: none;
+}
+
+/* Units in CSS
+
+Absolute - px, pt, pc, cm, mm, in
+Relative - %, em, rem, ch, vh, vw  many more..
+
+Percentages(%) - It is often used to define a size as relative to an elements's parent object.
+width: 33%;
+margin-left: 50%;
+
+Em - Relative to Font size of the parent, in the case of typographyical properties like font-size, nad
+    font size of the element itself, in the case of other properties like width.
+
+*/
+
+#outer {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 10px;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+button {
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Drawback of Em - Snowball effect in nested elements */
+
+/* Rem(Root Em) - rem Relative to Font size of the root element.  */
