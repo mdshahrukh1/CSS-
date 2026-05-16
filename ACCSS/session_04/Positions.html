@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<body>
+    <!-- Position - The position CSS Property sets how an element is positioned in a document.
+    The top, right, bottom, and ;eleft properties etermine the final location of positione elements.
+    
+    static - The top, right, bottom, left, and z-index properties have no effect.
+    This is the default value.
+    
+    rlative - The offset is relative to itself based on the values of top, right, bottom, and left.
+
+    absolute - The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial aontaining block.
+    
+    fixed - The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    It is positioned relative to the initial containing block established by the viewport.
+
+    sticky - positioning is a hybrid of relative and fixed positioning.
+    
+    It behaves like position: relative initially.
+    When the element reaches a specified offset (like top: 0),
+    it "sticks" and behaves like position: fixed.
+
+    It sticks within its parent container,
+    not the whole page (unless the parent is the body).
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: white;
+    }
+      
+    -->
+    <section>
+        <h2>Static Demo</h2>
+        <div></div>
+        <div id="static"></div>
+    </section>
+
+    <section>
+        <h2>Relateve Demo</h2>
+        <div></div>
+        <div id="relative"></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Absolute Demo</h2>
+        <div></div>
+        <div id="absolute"></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Fixed Demo</h2>
+        <div></div>
+        <div id="fixed">fixed</div>
+        <div></div>
+    </section>
+
+</body>
+
+</html>
