@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    1. CSS Grid - Setting a container's display to grid will make all children grid item.
+    
+    container {
+      display: gruid;
+    }
+
+   2. Grid container which contain the content and content will grid item.
+    It will effect only the direct child.
+
+
+    Grid Model (column lines, row lines)
+
+    Grid Lines -  column lines, row lines.
+
+    Grid Cell - boxes inside grid layout.
+
+    Grid Track -  distance between two lines.
+
+
+    3. Grid Template - They define the lines & track sizing.
+
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: auto auto auto; for equally dividing the space
+
+
+    4. Grid Template(Repeat) - Repeat is used to divide all available space
+
+    grid-template-rows: repear(count, 1fr); 1 fraction of 100% width / available space.
+
+    grid-template-columns: repeat(count, 1fr); 1 fraction of 100% height / available space.
+
+
+    * Two ways to write repeat---
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-rows: 1fr 1fr;
+
+
+    5. Grid Gaps - They define the gaps between the lines.
+
+    row-gap - 10px;
+
+    column-gap - 10px;
+
+    grid - gap: rowGap columnGap
+
+
+    6. Grid Columns -Define an item's starting & ending position inside the column.
+
+    grid-column-start: line_number;
+
+    grid-column-end: line_number;
+
+    grid-column: start_col / end_col; exclude the last number
+    grid-column: start_col / span  number; include the last number
+
+
+    7. Grid Rows - Define an item's starting & ending position inisde the row.
+
+    grid-row-start: line_number;
+
+    grid-row-end: line_number;
+
+    grid-row: start_row / end_row; exclude the last number
+    grid-row-start: start_row / span  number; include the last number
+
+    -->
+
+    <h1>Grid Playground</h1>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <span>This is a span</span>
+</body>
+</html>
