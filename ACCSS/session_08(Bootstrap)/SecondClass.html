@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing using Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <nav class="navbar">
+        <a href="#">Brand Name</a>
+    </nav> -->
+
+    <!-- 
+    1. Navbar Components
+
+    2.Cards Components
+
+    3. Grid Layout
+    it works on 12 column system.
+    Grid(Responsive) Grid Options
+
+    Vertical Alignment Grid(Column).
+    align-items-start
+    align-items-center
+    align-items-end
+
+    align-self-start
+    ....
+
+
+    4. Forms
+    Form Controls, Select, Checkbox & Radio, Layout
+
+    
+
+    
+
+     -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand">Navbar</a> -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+        <h2>Grid System</h2>
+        <div class="row">
+            <div class="col-md-2 bg-success">
+                Column
+            </div>
+            <div class="col-md-2 bg-danger">
+                Column
+            </div>
+            <div class="col-md-2 bg-warning">
+                Column
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 bg-success">
+                Column
+            </div>
+            <div class="col-md-8 bg-danger">
+                Column
+            </div>
+            <div class="col-md-2 bg-warning">
+                Column
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col bg-success">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates provident illo similique ad quis,
+                delectus iure deleniti aspernatur quam reprehenderit commodi consectetur quaerat sed. Sit soluta magnam
+                ab illo esse.
+            </div>
+            <div class="col bg-warning">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto veritatis ut in eveniet
+                quaerat iste? Officiis reiciendis consequatur, labore dolore nisi maiores, perferendis dolorum, eaque
+                deleniti obcaecati eum hic.
+            </div>
+            <div class="col bg-danger">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem ipsum ipsam placeat earum ea
+                laborum voluptatem dolorum molestiae consequuntur aliquid deserunt corrupti molestias vero maxime minima
+                esse veritatis, minus sint.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Form Demo</h2>
+        <form action="" class="mb-3">
+            <label class="from-label" for="email">Email</label>
+            <input class="form-control" type="text" placeholder="Email" id="email" />
+
+            <label class="from-label" for="password">Password</label>
+            <input class="form-control" type="password" placeholder="Email" id="password" />
+
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                <label class="form-check-label" for="checkChecked">
+                    Checked checkbox
+                </label>
+            </div>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                    Default radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    Default checked radio
+                </label>
+            </div>
+
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                <label class="form-check-label" for="checkNativeSwitch">
+                    Native switch haptics
+                </label>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
